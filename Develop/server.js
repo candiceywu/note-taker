@@ -21,6 +21,11 @@ app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
+// GET Route for notes page via url
+app.get('/notes', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/notes.html'))
+);
+
 // // Wildcard route to direct users to a 404 page (should always be at the end of the GET routes)
 // app.get('*', (req, res) =>
 //   res.sendFile(path.join(__dirname, 'public/404.html'))
