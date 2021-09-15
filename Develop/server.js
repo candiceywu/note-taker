@@ -1,11 +1,10 @@
 const express = require('express');
-// const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const api = require('./routes/notes')
 
 
-
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
@@ -17,20 +16,15 @@ app.use('/api', api);
 //link to static assets
 app.use(express.static('public'));
 
-// GET Route for homepage 
+// GET route for homepage 
 app.get('/', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/index.html'))
 );
 
-// GET Route for notes page 
+// GET route for notes page 
 app.get('/notes', (req, res) =>
   res.sendFile(path.join(__dirname, '/public/notes.html'))
 );
-
-// // Wildcard route to direct users to a 404 page (should always be at the end of the GET routes)
-// app.get('*', (req, res) =>
-//   res.sendFile(path.join(__dirname, 'public/404.html'))
-// );
 
 
 //listen port

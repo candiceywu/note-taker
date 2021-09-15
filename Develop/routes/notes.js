@@ -6,7 +6,6 @@ const {
   writeToFile,
 } = require('../helpers/fsUtils');
 const path = require('path');
-// const database = require('/db/db');
 
 
 // GET route for retrieving all the notes
@@ -15,7 +14,7 @@ notes.get('/notes', (req, res) => {
 });
 
 
-// GET Route for a specific note
+// GET route for a specific note with ID
 notes.get('/notes/:id', (req, res) => {
   const noteId = req.params.id;
   readFromFile('./db/db.json')
@@ -28,7 +27,7 @@ notes.get('/notes/:id', (req, res) => {
     });
 });
 
-// POST Route for a new note
+// POST route for a new note
 notes.post('/notes', (req, res) => {
 
   console.log(req.body);
@@ -44,7 +43,7 @@ notes.post('/notes', (req, res) => {
       id: uuidv4(),
     };
 
-
+    //appending it to the json file
     readAndAppend(newNote, './db/db.json');
     res.json(`Note added successfully 🚀`);
   } else {
@@ -53,7 +52,7 @@ notes.post('/notes', (req, res) => {
 });
 
 
-// DELETE Route for a specific note
+// DELETE route for a specific note
 notes.delete('/notes/:id', (req, res) => {
   const noteId = req.params.id;
   readFromFile('./db/db.json')
@@ -66,7 +65,7 @@ notes.delete('/notes/:id', (req, res) => {
       writeToFile('./db/db.json', result);
 
       // Respond to the DELETE request
-      res.json(`Note ${noteId} has been deleted 🗑️`);
+      res.json(`Note ${noteId} has been deleted`);
     });
 });
 
