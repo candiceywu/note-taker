@@ -15,7 +15,7 @@ This application, Team Profile Generator, allows the user to create a webpage th
   - [Questions](#questions)
 
 ## Installation
-For installation, the user will use their command line (Terminal, Bash, etc.) and make sure they are accessing the correct server.js file that's being run. The user can then type in 'node server.js' or 'node server' in the command line. The command line will then return 'App listening at http://localhost:3001'. But for this homework's requirements, the application has been deployed through Heroku, so please access the application [here](https://fierce-lowlands-57764.herokuapp.com/).
+For installation, the user will use their command line (Terminal, Bash, etc.) and make sure they are accessing the correct server.js file that's being run. The user can then type in 'node server.js' or 'node server' in the command line. The command line will then return 'App listening at http://localhost:3001'. For this homework's requirements, the application has been deployed using Heroku, and the application can be accessed [here](https://fierce-lowlands-57764.herokuapp.com/).
 
 ## Usage 
 The application helps the user keep track of their notes; the user can type in a title, followed by text; when the user is done, they can click the 'save' icon at the top right corner, which will log the notes to the left-hand column of the application page. The user can also click on that saved note to bring it to full preview on the right-hand column, as well as delete it by clicking the 'delete' (trash) icon. 
