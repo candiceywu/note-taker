@@ -7,10 +7,22 @@
     "test": "jest",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Candice Wu",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
     "uuid": "^8.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/candiceywu/note-taker.git"
+  },
+  "keywords": [
+    "note-taker"
+  ],
+  "bugs": {
+    "url": "https://github.com/candiceywu/note-taker/issues"
+  },
+  "homepage": "https://github.com/candiceywu/note-taker#readme"
 }
