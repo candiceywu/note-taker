@@ -3,7 +3,7 @@
 ![license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
-This application, Team Profile Generator, allows the user to create a webpage that captures their team information for the manager, engineer(s) and intern(s). The application will prompt the user with questions that they can answer in detail, which will then populate an index.html file under the /dist folder, and they can open this in their browser to see the formatted results. This helps the user visualize their team and they can also click the email links for the manager, engineer(s) intern to email them directly, as well as click on the engineer's GitHub username to take them to their GitHub profile page.
+This application, Note Taker, allows the user to keep track of their notes on a web application. Users can add a note title, followed by detailed notes in the body; this way, a user can enter in their notes, and if they log out/close the application and reopen it, their notes will still be rendered. Keeping track of your to-do's have never been easier!
 
 ## Table of Contents
   - [Description](#description)
@@ -15,7 +15,7 @@ This application, Team Profile Generator, allows the user to create a webpage th
   - [Questions](#questions)
 
 ## Installation
-For installation, the user will use their command line (Terminal, Bash, etc.) and make sure they are accessing the correct server.js file that's being run. The user can then type in 'node server.js' or 'node server' in the command line. The command line will then return 'App listening at http://localhost:3001'. For this homework's requirements, the application has been deployed using Heroku, and the application can be accessed [here](https://fierce-lowlands-57764.herokuapp.com/).
+For installation, the user has two options: they can use their command line (Terminal, Bash, etc.) and make sure they are accessing the correct server.js file that's being run. The user can then type in 'node server.js' or 'node server' in the command line. The command line will then return 'App listening at http://localhost:3001', and they can then access the application which has been deployed using Heroku [here](https://fierce-lowlands-57764.herokuapp.com/). If the user begins from their terminal, their Note Taker dashboard should be empty and will populate with information as they enter it. Otherwise, clicking on the deployed link as-is will open with prepopulated data that I used to test the application.
 
 ## Usage 
 The application helps the user keep track of their notes; the user can type in a title, followed by text; when the user is done, they can click the 'save' icon at the top right corner, which will log the notes to the left-hand column of the application page. The user can also click on that saved note to bring it to full preview on the right-hand column, as well as delete it by clicking the 'delete' (trash) icon. 
